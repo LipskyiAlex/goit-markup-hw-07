@@ -71,6 +71,11 @@ body {
   color: var(--color-slate);
 }
 
+body.modal-open {
+
+  overflow: hidden;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -139,6 +144,7 @@ address {
 
 .container {
   min-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -149,13 +155,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
 
     padding-left: 15px;
     padding-right: 15px;
