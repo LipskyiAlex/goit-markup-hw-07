@@ -25,6 +25,12 @@
             <nav class="header-nav">
                 <a href="./index.html" class="logo link">Web<span class="header-logo">Studio</span> </a>
 
+                <button class="menu-toggler js-open-menu" type="_button" aria-expanded="false"
+                    aria-controls="mobile menu">
+                    <svg class="toggler-icon" width="32" height="22">
+                        <use href="./images/icon.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
                 <ul class="nav-list list">
                     <li class="nav-item"><a href="./index.html" class="header-link link current">Studio</a></li>
                     <li class="nav-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
@@ -40,10 +46,6 @@
                 </ul>
             </address>
         </div>
-
-
-
-
     </header>
     <main>
         <!-- Hero section -->
@@ -55,114 +57,53 @@
             </div>
 
 
-            <!-- Modal window -->
 
-            <div data-modal class="backdrop is-hidden">
-                <div class="modal">
-
-                    <button data-modal-close class="modal-btn btn">
-                        <svg class="modal-svg" width="8" height="8">
-                            <use href="./images/icon.svg#icon-close-modal"></use>
-                        </svg>
-                    </button>
-
-                    <form class="modal-form">
-
-                        <strong class="modal-text text">Leave your contacts and we will call you back</strong>
-
-                        <label for="name" class="label name-label">Name </label>
-                        <span class="modal-icon-wrapper">
-                            <input id="name" class="modal-input input" type="text" name="username">
-                            <svg class="modal-icon" width="18" height="24">
-                                <use href="./images/icon.svg#name"></use>
-                            </svg>
-                        </span>
-
-
-                        <label for="phone" class="label">Phone</label>
-                        <span class="modal-icon-wrapper">
-                            <input id="phone" class="modal-input input" type="tel" name="userphone">
-
-                            <svg class="modal-icon" width="18" height="24">
-                                <use href="./images/icon.svg#phone"></use>
-                            </svg>
-
-                        </span>
-
-                        <label for="mail" class="label" for="email">Email</label>
-                        <span class="modal-icon-wrapper">
-                            <input id="mail" class="modal-input input" type="email" name="email">
-                            <svg class="modal-icon" width="18" height="24">
-                                <use href="./images/icon.svg#mail"></use>
-                            </svg>
-                        </span>
-
-
-                        <label class="label" for="comment">Comment</label>
-                        <textarea class="area-input input" name="comment" id="comment"
-                            placeholder="Text input"></textarea>
-
-
-                        <div class="agreement-wrapper">
-                            <input id="agreement-check" class="input agreement-input visually-hidden" type="checkbox"
-                                name="agreement">
-                            <label for="agreement-check" class="agreement-label">
-                                <span class="agreement-input-wrapper">I accept the terms and conditions of the&nbsp;</span><a
-                                    class="agreement-link" href="">Privacy Policy</a></label>
-                        </div>
-
-                        <button class="btn agreement-btn" type="submit">Send</button>
-
-                    </form>
-
-                </div>
-            </div>
         </section>
 
-        <!-- Feautures -->
-        <section class="feautures">
+        <!-- Features -->
+        <section class="features">
             <div class="container">
-                <h2 class="title visually-hidden">feautures</h2>
+                <h2 class="title visually-hidden">features</h2>
                 <!--  Скрытый заголовок, используем для ассистивных технологий и индексатор -->
 
                 <ul class="features-list list">
 
-                    <li class="feautures-item">
-                        <div class="container-feautures-icons"> <svg width="64" height="64">
+                    <li class="features-item">
+                        <div class="container-features-icons"> <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icon.svg#icon-antenna"></use>
                             </svg></div>
 
-                        <h3 class="feautures-title title">Strategy</h3>
-                        <p class="feautures-text text">Our goal is to identify the business
+                        <h3 class="features-title title">Strategy</h3>
+                        <p class="features-text text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
-                    <li class="feautures-item">
-                        <div class="container-feautures-icons"> <svg width="64" height="64">
+                    <li class="features-item">
+                        <div class="container-features-icons"> <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icon.svg#icon-clock"></use>
                             </svg></div>
-                        <h3 class="feautures-title title">Punctuality</h3>
-                        <p class="feautures-text text">Bring the key message to the brand's audience for the best price
+                        <h3 class="features-title title">Punctuality</h3>
+                        <p class="features-text text">Bring the key message to the brand's audience for the best price
                             within the shortest possible
                             time.
                         </p>
                     </li>
-                    <li class="feautures-item">
-                        <div class="container-feautures-icons"> <svg width="64" height="64">
+                    <li class="features-item">
+                        <div class="container-features-icons"> <svg class="features-icon" width="64" height="64">
                                 <use href="./images/icon.svg#icon-diagram"></use>
                             </svg></div>
-                        <h3 class="feautures-title title">Diligence</h3>
-                        <p class="feautures-text text">Research and confirm brands that present the strongest digital
+                        <h3 class="features-title title">Diligence</h3>
+                        <p class="features-text text">Research and confirm brands that present the strongest digital
                             growth
                             opportunities and minimize
                             risk.
                         </p>
                     </li>
-                    <li class="feautures-item">
-                        <div class="container-feautures-icons"> <svg width="64" height="64" class="icon-astronaut">
+                    <li class="features-item">
+                        <div class="container-features-icons"> <svg class="features-icon" width="64" height="64" class="icon-astronaut">
                                 <use href="./images/icon.svg#icon-clock"></use>
                             </svg></div>
-                        <h3 class="feautures-title title">Technologies</h3>
-                        <p class="feautures-text text">Design practice focused on digital experiences. We bring forth a
+                        <h3 class="features-title title">Technologies</h3>
+                        <p class="features-text text">Design practice focused on digital experiences. We bring forth a
                             deep
                             passion for
                             problem-solving.
@@ -436,7 +377,128 @@
         </div>
     </footer>
 
+    <!-- Mobile header menu -->
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+            <!-- mobile menu navigation -->
+      
+            <div class="container mobile-menu-container">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="icon-menu-close" width="8" height="8">
+                        <use href="./images/icon.svg#icon-close-modal"></use>
+                    </svg>
+                </button> 
+                <ul class="nav-list-mobile list">
+                    <li class="nav-item-mobile"><a href="./index.html" class="header-link-mobile link current">Studio</a></li>
+                    <li class="nav-item-mobile"><a href="./portfolio.html" class="header-link-mobile link">Portfolio</a></li>
+                    <li class="nav-item-mobile"><a href="" class="header-link-mobile link">Contacts</a></li>
+                </ul>
+    
+                <!-- mobile menu adress -->
+         
+   
+                <ul class="contacts-list-mobile list">
+                    <li class="contact-item-mobile"><a href="tel:+110001111111" class="contact-link-mobile link">+11 (000) 111-11-11</a></li>
+                    <li class="contact-item-mobile"><a href="mailto:info@devstudio.com"
+                            class="contact-link-mobile link">info@devstudio.com</a></li>
+                </ul>
+      
+    
+             <!-- mobile menu social links -->
+            <ul class="team-icons-list">
+                <li class="team-icons-item list"><a href="https://www.instagram.com"
+                        aria-label="instagram logo" target="_blank" rel="noopener norefferer"
+                        class="team-icons-link"><svg class="team-icons" width="24" height="24">
+                            <use href="./images/icon.svg#icon-instagram2"></use>
+                        </svg></a></li>
+                <li class="team-icons-item list"><a href="https://www.twitter.com"
+                        aria-label="twitter logo" target="_blank" rel="noopener norefferer"
+                        class="team-icons-link"><svg class="team-icons" width="24" height="24">
+                            <use href="./images/icon.svg#icon-twitter2"></use>
+                        </svg></a></li>
+                <li class="team-icons-item list"><a href="https://www.facebook.com"
+                        aria-label="facebook logo" target="_blank" rel="noopener norefferer"
+                        class="team-icons-link"><svg class="team-icons" width="24" height="24">
+                            <use href="./images/icon.svg#icon-facebook2"></use>
+                        </svg></a></li>
+                <li class="team-icons-item list"><a href="https://wwww.linkedin.com"
+                        aria-label="linkedIn logo" target="_blank" rel="noopener norefferer"
+                        class="team-icons-link"><svg class="team-icons" width="24" height="24">
+                            <use href="./images/icon.svg#icon-linkedin2"></use>
+                        </svg></a></li>
+            </ul></div>
+               
+      
+
+    </div>
+
+    <!-- Modal window -->
+
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+
+            <button data-modal-close class="modal-btn btn">
+                <svg class="modal-svg" width="8" height="8">
+                    <use href="./images/icon.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+
+            <form class="modal-form">
+
+                <strong class="modal-text text">Leave your contacts and we will call you back</strong>
+
+                <label for="name" class="label name-label">Name </label>
+                <span class="modal-icon-wrapper">
+                    <input id="name" class="modal-input input" type="text" name="username">
+                    <svg class="modal-icon" width="18" height="24">
+                        <use href="./images/icon.svg#name"></use>
+                    </svg>
+                </span>
+
+
+                <label for="phone" class="label">Phone</label>
+                <span class="modal-icon-wrapper">
+                    <input id="phone" class="modal-input input" type="tel" name="userphone">
+
+                    <svg class="modal-icon" width="18" height="24">
+                        <use href="./images/icon.svg#phone"></use>
+                    </svg>
+
+                </span>
+
+                <label for="mail" class="label" for="email">Email</label>
+                <span class="modal-icon-wrapper">
+                    <input id="mail" class="modal-input input" type="email" name="email">
+                    <svg class="modal-icon" width="18" height="24">
+                        <use href="./images/icon.svg#mail"></use>
+                    </svg>
+                </span>
+
+
+                <label class="label" for="comment">Comment</label>
+                <textarea class="area-input input" name="comment" id="comment" placeholder="Text input"></textarea>
+
+
+                <div class="agreement-wrapper">
+                    <input id="agreement-check" class="input agreement-input visually-hidden" type="checkbox"
+                        name="agreement">
+                    <label for="agreement-check" class="agreement-label">
+                        <span class="agreement-input-wrapper">I accept the terms and conditions of
+                            the&nbsp;</span><a class="agreement-link" href="">Privacy Policy</a></label>
+                </div>
+
+                <button class="btn agreement-btn" type="submit">Send</button>
+
+            </form>
+
+        </div>
+    </div>
+
+
     <!-- modal JS scrpit-->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
