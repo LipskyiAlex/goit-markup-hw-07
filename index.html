@@ -25,8 +25,8 @@
             <nav class="header-nav">
                 <a href="./index.html" class="logo link">Web<span class="header-logo">Studio</span> </a>
 
-                <button class="menu-toggler js-open-menu" type="_button" aria-expanded="false"
-                    aria-controls="mobile menu">
+                <button class="menu-toggler js-open-menu" type="button" aria-expanded="false"
+                    aria-controls="mobile-menu">
                     <svg class="toggler-icon" width="32" height="22">
                         <use href="./images/icon.svg#icon-menu-hamburger"></use>
                     </svg>
@@ -99,7 +99,7 @@
                         </p>
                     </li>
                     <li class="features-item">
-                        <div class="container-features-icons"> <svg class="features-icon" width="64" height="64" class="icon-astronaut">
+                        <div class="container-features-icons"> <svg class="features-icon icon-astronaut" width="64" height="64">
                                 <use href="./images/icon.svg#icon-clock"></use>
                             </svg></div>
                         <h3 class="features-title title">Technologies</h3>
@@ -135,7 +135,7 @@
                 <ul class="team-list list">
                     <li class="team-item">
                         
-                        <img srcset="./images/Team/team_1@1x.jpg 1x, ./images/Team/team_1@2x.jpg 2x" src="./images/Team/team_1@1x.jpg" alt="Mark Guerrero's photo" width="264px">
+                        <img srcset="./images/Team/team_1@1x.jpg 1x, ./images/Team/team_1@2x.jpg 2x" src="./images/Team/team_1@1x.jpg" alt="Mark Guerrero's photo" width="264">
                         <div class="team-description">
                             <h3 class=" team-subtitle title">Mark Guerrero</h3>
                             <p class="team-text text">Product Designer</p>
@@ -164,7 +164,7 @@
                         </div>
 
                     </li>
-                    <li class="team-item"><img srcset="./images/Team/team_2@1x.jpg 1x, ./images/Team/team_2@2x.jpg 2x" src="./images/Team/team_2@1x.jpg" alt="Tom Ford's photo" width="264px">
+                    <li class="team-item"><img srcset="./images/Team/team_2@1x.jpg 1x, ./images/Team/team_2@2x.jpg 2x" src="./images/Team/team_2@1x.jpg" alt="Tom Ford's photo" width="264">
                         <div class="team-description">
                             <h3 class=" team-subtitle title">Tom Ford</h3>
                             <p class="team-text text">Frontend Developer</p>
@@ -193,7 +193,7 @@
                         </div>
 
                     </li>
-                    <li class="team-item"><img srcset="./images/Team/team_3@1x.jpg 1x, ./images/Team/team_3@2x.jpg 2x" src="./images/Team/team_3@1x.jpg" alt="Camia Garica's photo" width="264px">
+                    <li class="team-item"><img srcset="./images/Team/team_3@1x.jpg 1x, ./images/Team/team_3@2x.jpg 2x" src="./images/Team/team_3@1x.jpg" alt="Camia Garica's photo" width="264">
                         <div class="team-description">
                             <h3 class=" team-subtitle title">Camila Garcia</h3>
                             <p class="team-text text">Marketing</p>
@@ -222,7 +222,7 @@
                         </div>
 
                     </li>
-                    <li class="team-item"> <img srcset="./images/Team/team_4@1x.jpg 1x, ./images/Team/team_4@2x.jpg 2x" src="./images/Team/team_4@1x.jpg" alt="Daniel's photo" width="264px">
+                    <li class="team-item"> <img srcset="./images/Team/team_4@1x.jpg 1x, ./images/Team/team_4@2x.jpg 2x" src="./images/Team/team_4@1x.jpg" alt="Daniel's photo" width="264">
                         <div class="team-description">
                             <h3 class=" team-subtitle title">Daniel Wilson</h3>
                             <p class="team-text text">UI Designer</p>
@@ -378,7 +378,7 @@
             <!-- mobile menu navigation -->
       
             <div class="container mobile-menu-container">
-                <button class="menu-toggle js-close-menu">
+                <button class="menu-toggle js-close-menu" type="button">
                     <svg class="icon-menu-close" width="8" height="8">
                         <use href="./images/icon.svg#icon-close-modal"></use>
                     </svg>
@@ -421,10 +421,8 @@
                         class="team-icons-link"><svg class="team-icons" width="24" height="24">
                             <use href="./images/icon.svg#icon-linkedin2"></use>
                         </svg></a></li>
-            </ul></div>
-               
-      
-
+            </ul>
+        </div>    
     </div>
 
     <!-- Modal window -->
@@ -432,7 +430,7 @@
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
 
-            <button data-modal-close class="modal-btn btn">
+            <button data-modal-close class="modal-btn btn" type="button">
                 <svg class="modal-svg" width="8" height="8">
                     <use href="./images/icon.svg#icon-close-modal"></use>
                 </svg>
@@ -461,7 +459,7 @@
 
                 </span>
 
-                <label for="mail" class="label" for="email">Email</label>
+                <label for="mail" class="label">Email</label>
                 <span class="modal-icon-wrapper">
                     <input id="mail" class="modal-input input" type="email" name="email">
                     <svg class="modal-icon" width="18" height="24">

@@ -284,6 +284,23 @@ address {
   }
 }
 
+.header-link {
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
+
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-ocean);
+}
+
 .current {
   position: relative;
 }
@@ -292,7 +309,7 @@ address {
   content: "";
 
   position: absolute;
-  bottom: -22px;
+  bottom: 0;
 
   display: block;
   width: 100%;
@@ -301,6 +318,8 @@ address {
 
   background-color: var(--color-ocean);
 }
+
+
 
 .contacts-list {
   display: flex;
@@ -425,6 +444,8 @@ address {
 
 @media only screen and (min-width: 1158px) {
   .hero {
+    padding-top:188px;
+    padding-bottom: 188px;;
     max-width: 1440px;
     height: 600px;
   }
@@ -437,6 +458,17 @@ address {
   align-items: center;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 427px) {
+  
+   .hero .container {
+
+    gap: 32px;
+    
+  }
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .hero .container {
@@ -458,6 +490,25 @@ address {
   text-transform: capitalize;
 
   color: var(--color-white);
+}
+
+@media only screen and (max-width: 427px) {
+   
+  .hero-title{
+
+    font-size: 30px;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) {
+.hero-title {
+
+  max-width: 496px;
+
+  font-size: 56px;
+    
+  }
 }
 
 .hero-btn {
@@ -635,8 +686,7 @@ address {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .team > .container {
-    padding-left: 108px;
-    padding-right: 108px;
+    width: 584px;
   }
 }
 .team-title {
@@ -672,6 +722,8 @@ address {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-description {
@@ -712,8 +764,8 @@ address {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .customers > .container {
-    padding-left: 108px;
-    padding-right: 108px;
+    
+    width: 584px;
   }
 }
 
@@ -827,13 +879,15 @@ address {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer > .container {
-    padding-left: 108px;
+
+    width: 584px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .footer > .container {
-    gap: 80px;
+    gap:0;
+
   }
 }
 
@@ -853,7 +907,7 @@ address {
 
 @media only screen and (min-width: 1158px) {
   .container-left {
-    margin-right: 40px;
+    margin-right: 120px;
   }
 }
 
@@ -879,6 +933,14 @@ address {
 @media only screen and (min-width: 768px) {
   .container-right {
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   
+  .container-right {
+    margin-right: 80px;
+    
   }
 }
 
@@ -961,10 +1023,10 @@ address {
 }
 
 .subscribe-input {
-  /* 
-  width: 264px; */
+  
   display: block;
-  width: 100%;
+  width: calc(100vw - 32px);
+  max-width: 398px;
   height: 40px;
   padding-left: 16px;
   border: 1px solid var(--color-white);
@@ -1179,6 +1241,9 @@ address {
 .mobile-menu-container {
   position: relative;
 
+  width: 100%;
+  height: 100vh;
+
   padding-top: 80px;
   padding-right: 35px;
   padding-bottom: 40px;
@@ -1224,11 +1289,68 @@ address {
   .nav-list-mobile {
     margin-bottom: 190px;
   }
-}
+
+ 
+    /* current page underline */
+
+  
+  }
+
+
+  @media only screen and (max-height: 750px) {
+    .nav-list-mobile {
+      
+      margin-bottom: 100px;
+    }
+
+    .current::after {
+
+      bottom: -18px;
+    }
+  
+  }
+
+  @media only screen and (max-height: 560px) {
+    
+    .nav-list-mobile {
+
+      margin-bottom: 70px;
+
+      font-size: 30px;
+
+    }
+
+    /* cuurent page underline */
+
+    .current::after {
+
+      bottom: -12px;
+    }
+  }
+
+
+
 
 .nav-item-mobile:not(:last-child) {
   margin-bottom: 40px;
 }
+
+@media only screen and (max-height: 650px) {
+  
+  .nav-item-mobile:not(:last-child) {
+    
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-height: 560px) {
+    
+    .nav-item-mobile:not(:last-child) {
+    
+      margin-bottom: 20px;
+    }
+  }
+}
+
 
 .header-link-mobile:hover,
 .header-link-mobile:focus {
