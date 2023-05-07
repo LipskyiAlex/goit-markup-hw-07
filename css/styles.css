@@ -1246,7 +1246,7 @@ address {
 
   padding-top: 80px;
   padding-right: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   padding-left: 40px;
 
   background-color: #ffffff;
@@ -1280,77 +1280,21 @@ address {
   font-weight: 700;
   line-height: 1.11;
 
-  margin-bottom: 284px;
-
   color: var(--color-navy-blue);
 }
 
-@media only screen and (max-width: 427px) {
-  .nav-list-mobile {
-    margin-bottom: 190px;
-  }
+.mobile-menu-wrapper {
 
- 
-    /* current page underline */
-
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
-  }
-
-
-  @media only screen and (max-height: 750px) {
-    .nav-list-mobile {
-      
-      margin-bottom: 100px;
-    }
-
-    .current::after {
-
-      bottom: -18px;
-    }
-  
-  }
-
-  @media only screen and (max-height: 560px) {
-    
-    .nav-list-mobile {
-
-      margin-bottom: 70px;
-
-      font-size: 30px;
-
-    }
-
-    /* cuurent page underline */
-
-    .current::after {
-
-      bottom: -12px;
-    }
-  }
-
-
-
+}
 
 .nav-item-mobile:not(:last-child) {
   margin-bottom: 40px;
 }
-
-@media only screen and (max-height: 650px) {
-  
-  .nav-item-mobile:not(:last-child) {
-    
-    margin-bottom: 30px;
-  }
-
-  @media screen and (max-height: 560px) {
-    
-    .nav-item-mobile:not(:last-child) {
-    
-      margin-bottom: 20px;
-    }
-  }
-}
-
 
 .header-link-mobile:hover,
 .header-link-mobile:focus {
@@ -1364,7 +1308,7 @@ address {
 /* menu adress mobile  */
 
 .contacts-list-mobile {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .contact-item-mobile:nth-child(1) {
@@ -1397,6 +1341,8 @@ address {
   display: flex;
   gap: 56px;
   align-items: center;
+
+
 }
 
 @media only screen and (max-width: 427px) {
