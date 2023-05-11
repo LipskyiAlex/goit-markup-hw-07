@@ -146,7 +146,6 @@ address {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -285,7 +284,6 @@ address {
 }
 
 .header-link {
-
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -293,7 +291,6 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
-
 }
 
 .header-link:hover,
@@ -318,8 +315,6 @@ address {
 
   background-color: var(--color-ocean);
 }
-
-
 
 .contacts-list {
   display: flex;
@@ -412,40 +407,35 @@ address {
   }
 }
 
-
-
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 1158px;
     height: 436px;
-     
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/Hero_desktop_@1x.jpg);
 
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/Hero_desktop_@2x.jpg);
+      url(../images/hero/Hero_desktop_@1x.jpg);
   }
-}
 
-  
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/Hero_desktop_@2x.jpg);
+    }
+  }
 }
 
 @media only screen and (min-width: 1158px) {
   .hero {
-    padding-top:188px;
-    padding-bottom: 188px;;
+    padding-top: 188px;
+    padding-bottom: 188px;
     max-width: 1440px;
     height: 600px;
   }
@@ -460,15 +450,10 @@ address {
 }
 
 @media only screen and (max-width: 427px) {
-  
-   .hero .container {
-
+  .hero .container {
     gap: 32px;
-    
   }
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .hero .container {
@@ -493,21 +478,16 @@ address {
 }
 
 @media only screen and (max-width: 427px) {
-   
-  .hero-title{
-
+  .hero-title {
     font-size: 30px;
-    
   }
 }
 
 @media only screen and (min-width: 768px) {
-.hero-title {
+  .hero-title {
+    max-width: 496px;
 
-  max-width: 496px;
-
-  font-size: 56px;
-    
+    font-size: 56px;
   }
 }
 
@@ -723,7 +703,7 @@ address {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
-    border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-description {
@@ -764,7 +744,6 @@ address {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .customers > .container {
-    
     width: 584px;
   }
 }
@@ -879,15 +858,13 @@ address {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer > .container {
-
     width: 584px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .footer > .container {
-    gap:0;
-
+    gap: 0;
   }
 }
 
@@ -937,10 +914,8 @@ address {
 }
 
 @media only screen and (min-width: 1158px) {
-   
   .container-right {
     margin-right: 80px;
-    
   }
 }
 
@@ -1023,7 +998,6 @@ address {
 }
 
 .subscribe-input {
-  
   display: block;
   width: calc(100vw - 32px);
   max-width: 398px;
@@ -1076,116 +1050,167 @@ address {
 */
 
 .filter {
-
-  padding-top:96px;
-  padding-bottom:96px;
-
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
+
+@media only screen and (min-width: 768px) {
+  .filter {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+
 
 .filter-list {
 
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  /* original with is 263px */
 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
+  /* margin-bottom: 72px; */
 }
 
+@media only screen and (max-width: 427px) {
+  
+  .filter-list {
+
+    max-width:268px;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 64px;
+    justify-content: center;
+    
+  }
+}
+
+
 .filter-btn {
+  min-height: 40px;
+  padding: 8px 16px;
 
-  min-width: 101px;
-  min-height: 48px;
-
-  padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
 
   color: var(--color-iris);
   background-color: var(--color-cloud);
 
-  transition-property: color, background-color, box-shadow,border;
+  transition-property: color, background-color, box-shadow, border;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
-
 }
+
+@media only screen and (min-width: 768px) {
+   .filter-btn  {
+    
+    padding: 12px 24px;
+    min-height: 48px;
+  }
+}
+
 
 .filter-btn:focus,
 .filter-btn:hover {
-
   border: 1px solid transparent;
   color: var(--color-white);
   background-color: var(--color-ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-
 }
 
 /* Portfolio */
 
 .portfolio-list {
-
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
   row-gap: 48px;
-  flex-basis: calc((100%-48px) / 3);
+  justify-content: center;
+  /* flex-basis: calc((100%-48px) / 3); */
+}
 
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    /* there should be 24px */
+    gap: 72px 20px;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   
+  .portfolio-list {
+    
+    gap: 48px 21px;
+    
+  }
 }
 
 .portfolio-item {
-
+  border: 1px solid var(--color-cornflower);
   background-color: var(--color-white);
+}
 
+@media only screen and (max-width: 428px) {
+  .portfolio-item {
+    width: 290px;
+  }
+
+  .portfolio-img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-item {
+  }
 }
 
 .portfolio-link {
-  
   display: block;
 
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
-
 }
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-
   background-color: var(--color-white);
-  box-shadow:
-   0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-title {
-
   margin-bottom: 8px;
 
   text-align: inherit;
+}
 
+@media only screen and (max-width: 427px) {
+  .portfolio-item:first-child .title {
+    font-size: 17px;
+  }
 }
 
 .card-set {
-
   padding: 32px 16px;
-
-  border: 1px solid var(--color-cornflower);
-  border-top: none;
-
 }
 
 /* Portfolio card actions */
 
- .product-thumb {
-
+.product-thumb {
   position: relative;
   overflow: hidden;
-  
- }
+}
 
- .thumb-text {
-
+.thumb-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -1197,23 +1222,17 @@ address {
 
   transform: translateY(100%);
   transition: transform 250ms ease;
- 
- }
+}
 
- .product-text {
-
+.product-text {
   margin-top: 40px;
   margin-left: 32px;
   margin-right: 32px;
+}
 
- }
-
- .portfolio-link:hover .thumb-text {
-    
+.portfolio-link:hover .thumb-text {
   transform: translateY(0);
-   
- }
-
+}
 
 /**
   |============================
@@ -1284,12 +1303,10 @@ address {
 }
 
 .mobile-menu-wrapper {
-
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .nav-item-mobile:not(:last-child) {
@@ -1341,8 +1358,6 @@ address {
   display: flex;
   gap: 56px;
   align-items: center;
-
-
 }
 
 @media only screen and (max-width: 427px) {
