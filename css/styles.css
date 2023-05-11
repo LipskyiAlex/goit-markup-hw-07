@@ -1075,7 +1075,7 @@ address {
   /* margin-bottom: 72px; */
 }
 
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 767px) {
   
   .filter-list {
 
@@ -1132,7 +1132,7 @@ address {
   flex-wrap: wrap;
   row-gap: 48px;
   justify-content: center;
-  /* flex-basis: calc((100%-48px) / 3); */
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1148,7 +1148,7 @@ address {
   .portfolio-list {
     
     gap: 48px 21px;
-    
+
   }
 }
 
@@ -1157,7 +1157,7 @@ address {
   background-color: var(--color-white);
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 427px) {
   .portfolio-item {
     width: 290px;
   }
